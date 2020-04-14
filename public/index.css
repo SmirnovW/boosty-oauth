@@ -1,0 +1,36 @@
+.error {
+    color: red;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    font-family: sans-serif;
+    margin-left: 10px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #eaeaea;
+    background-image: url('/images/no-avatar.png');
+    background-size: cover;
+}
+
+.boosty {
+    display: block;
+    width: 268px;
+    height: 40px;
+    margin-right: 20px;
+    background: url(https://static.boosty.to/logo.2UwQU.svg) no-repeat 111px 0;
+    text-align: left;
+    padding: 0 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+}

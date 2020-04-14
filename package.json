@@ -1,0 +1,19 @@
+{
+  "name": "boosty-oauth",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "public/index.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "form-data": "^3.0.0",
+    "node-fetch": "^2.6.0",
+    "server": "^1.0.27"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
