@@ -13,7 +13,6 @@ server({
         get('/', () => render('/public/index.html')),
         get('/redirect.html', () => render('/redirect/index.html')),
         post('/api/token', controllers.token),
-        get('/api/token', controllers.token),
         get('/api/user', controllers.user),
     ]
 );

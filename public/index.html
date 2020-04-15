@@ -8,7 +8,7 @@
 <body>
     <div id="app">
         <button @click="openAuthWindow" v-if="!isAuthorized" class="boosty">Войти через</button>
-        <div v-if="error">{{error}}</div>
+        <div v-if="error" class="error">{{error}}</div>
         <div v-if="isAuthorized" class="profile">
             <img v-if="user.avatarUrl" :src="user.avatarUrl" alt="avatar">
             <div v-if="!user.avatarUrl" class="avatar"></div>

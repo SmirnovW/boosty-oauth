@@ -59,14 +59,13 @@ new Vue({
                 referrerPolicy: 'no-referrer', // no-referrer, *client
                 body: JSON.stringify({
                     code: event.data.code,
-                    redirectUri: `${location.host}/redirect.html`,
+                    redirectUri: `${location.href}redirect.html`,
                 }) // body data type must match "Content-Type" header
             })
                 .then((response) => response.json())
                 .then((data) => {
                     if (data.error) {
-                        const errorBlock = document.getElementById('error');
-                        errorBlock.innerText = data.error_description;
+                        this.error = data.error_description;
                     } else {
                         localStorage.setItem('access_token', data.access_token);
                         localStorage.setItem('refresh_token', data.refresh_token);
