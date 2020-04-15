@@ -9,7 +9,7 @@ function fetchToken(code, redirectUri) {
     params.append('redirect_uri', redirectUri);
     params.append('grant_type', 'authorization_code');
 
-    return fetch('https://boosty.eq.su/oauth/server/token', {
+    return fetch('https://boosty-alpha.eq.su/oauth/server/token', {
         method: 'POST', // *GET, POST, PUT, DELETE, etc.
         mode: 'cors',
         cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
@@ -26,7 +26,7 @@ function fetchToken(code, redirectUri) {
 }
 
 function fetchUser(token) {
-    return fetch('https://boosty.eq.su/dev/v1/users/current', {
+    return fetch('https://boosty-alpha.eq.su/dev/v1/users/current', {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',

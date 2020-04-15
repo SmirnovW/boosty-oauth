@@ -40,7 +40,7 @@ new Vue({
         },
         openAuthWindow() {
             authWindow = window.open(
-                `https://boosty.eq.su/app/oauth2/authorize?client_id=frontendhero&redirect_url=${location.href}redirect.html`,
+                `https://blog-1158.founder-alpha.my.cloud.devmail.ru/app/oauth2/authorize?client_id=frontendhero&redirect_url=${location.href}redirect.html`,
                 '',
                 `width=500,height=500,left=${window.outerWidth / 2 - 250},top=${window.outerHeight / 2 - 250}`
             );
